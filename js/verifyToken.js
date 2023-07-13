@@ -8,7 +8,7 @@ function verifyToken(){
     loading.classList.toggle('actived');
     setTimeout(() => {
         let token = document.getElementById('tokenInput').value;
-        fetch(`http://144.126.212.48:1103/api/docs/verify-token/${token}`, {method: "POST"}).then(response => response.json())
+        fetch(`https://144.126.212.48:1103/api/docs/verify-token/${token}`, {method: "POST"}).then(response => response.json())
         .then(data => {
         if(data.authentic){
             legit.classList.toggle('actived');
