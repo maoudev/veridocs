@@ -1,0 +1,108 @@
+@font-face {
+    font-family: denominary;
+    src: url('./fonts/denominary.woff2');
+}
+
+@font-face {
+    font-family: nexa;
+    src: url('./fonts/nexa.woff2');
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nexa;
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+}
+
+.title {
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.title h1{
+    font-size: 5rem;
+    font-family: denominary;
+}
+
+.title h1 span {
+    color: rgb(119, 119, 119);
+}
+
+.title p {
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+
+.options {
+    margin-top: 70px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generar-documentos {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.generar-documentos:hover {
+    scale: 1.1;
+}
+
+.generar-documentos i {
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.generar-documentos p {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+
+
+.verificar-documentos {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    color: black;
+}
+
+.verificar-documentos:hover {
+    scale: 1.1;
+}
+
+.verificar-documentos i {
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.verificar-documentos p {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-left: 10px;
+}

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: denominary;
+    src: url('./fonts/denominary.woff2');
+}
+
+@font-face {
+    font-family: nexa;
+    src: url('./fonts/nexa.woff2');
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: nexa;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    font-family: denominary;
+}
+
+.title span {
+    color: rgb(119, 119, 119);
+}
+
+
+.download-document {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.download-document p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.download-document button {
+    padding: 10px 50px;
+    border: 0;
+    background-color: rgb(119, 119, 119);
+    color: white;
+    font-family: nexa;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.download-document button:hover {
+    background-color: white;
+    color: rgb(119, 119, 119);
+    scale: 1.1;
+}
+
+
+
+.loading-image {
+    width: 70px;
+    display: none;
+}
+
+.ocultar {
+    display: none;
+}
+
+.actived {
+    display: block;
+}

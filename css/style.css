@@ -1,0 +1,111 @@
+@font-face {
+    font-family: denominary;
+    src: url('./fonts/denominary.woff2');
+}
+
+@font-face {
+    font-family: nexa;
+    src: url('./fonts/nexa.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nexa;
+    background-image: url('../img/background.JPG');
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgb(243, 243, 243);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.logo {
+    font-size: 1.7rem;
+    font-family: denominary;
+}
+
+.logo span {
+    color: rgb(119, 119, 119);
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.open-menu {
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+    .open-menu, .close-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .open-menu {
+        color: black;
+    }
+
+    .close-menu {
+        color: white
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(15, 15, 15);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    }
+
+    .nav.actived {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: white;
+    }
+    .nav-list li a:hover {
+        background-color: white;
+        color: black;
+    }
+}
