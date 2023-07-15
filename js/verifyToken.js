@@ -11,8 +11,10 @@ function verifyToken(){
         fetch(`https://api.veterinaya.com:80/api/docs/verify-token/${token}`, {method: "POST"}).then(response => response.json())
         .then(data => {
         if(data.authentic){
+            notLegit.classList.remove('actived')
             legit.classList.toggle('actived');
         } else {
+            legit.classList.remove('actived');
             notLegit.classList.toggle('actived');
         }
         })
