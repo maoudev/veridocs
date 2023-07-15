@@ -6,7 +6,7 @@ downloadButton.addEventListener('click', function(){
     downloadButton.classList.toggle("ocultar");
     loading.classList.toggle("actived");
     setTimeout(() => {
-      fetch('https://144.126.212.48:1103/api/docs/gen-doc')
+      fetch('https://api.veterinaya.com:80/api/docs/gen-doc')
       .then(response => response.blob())
       .then(blob => {
       const downloadLink = document.createElement('a');
